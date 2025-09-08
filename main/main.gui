@@ -1,0 +1,179 @@
+script: "/scripts/gui.gui_script"
+fonts {
+  name: "verdana"
+  font: "/assets/verdana.font"
+}
+nodes {
+  position {
+    x: 61.0
+    y: 604.0
+  }
+  scale {
+    x: 0.717541
+    y: 0.684375
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "0"
+  font: "verdana"
+  id: "score"
+  outline {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  shadow {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 500.0
+    y: 300.0
+  }
+  scale {
+    x: 2.100373
+    y: 2.524405
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "scoreboard"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: 33.27517
+  }
+  scale {
+    x: 0.397952
+    y: 0.334525
+    z: 0.96
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "You died!"
+  font: "verdana"
+  id: "title"
+  parent: "scoreboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -51.419437
+    y: 3.169064
+  }
+  scale {
+    x: 0.239022
+    y: 0.218405
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "Score:"
+  font: "verdana"
+  id: "s_label"
+  parent: "scoreboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -34.75573
+    y: -22.579578
+  }
+  scale {
+    x: 0.239022
+    y: 0.218405
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "High score:"
+  font: "verdana"
+  id: "hs_label"
+  parent: "scoreboard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 599.0
+    y: 308.0
+  }
+  scale {
+    x: 0.496569
+    y: 0.46391
+    z: 0.62
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "0"
+  font: "verdana"
+  id: "score1"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 599.0
+    y: 242.0
+  }
+  scale {
+    x: 0.496569
+    y: 0.46391
+    z: 0.62
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "0"
+  font: "verdana"
+  id: "score2"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

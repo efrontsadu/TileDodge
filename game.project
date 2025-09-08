@@ -1,0 +1,31 @@
+[bootstrap]
+main_collection = /main/main.collectionc
+render = /builtins/render/default.renderc
+
+[script]
+shared_state = 1
+
+[display]
+width = 960
+height = 640
+
+[android]
+input_method = HiddenInputField
+
+[project]
+title = Tile Dodge
+
+[windows]
+app_icon = /assets/icon.ico
+
+[ios]
+bundle_identifier = reube.tiledodge
+bundle_name = Tile Dodge
+
+[osx]
+bundle_identifier = reube.tiledodge
+bundle_name = Tile Dodge
+
+[physics]
+use_fixed_timestep = 1
+

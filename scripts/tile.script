@@ -1,0 +1,83 @@
+local list = {
+    vmath.vector4(63/255, 72/255, 204/255, 1),
+    vmath.vector4(0/255, 162/255, 232/255, 1),
+    vmath.vector4(34/255, 177/255, 76/255, 1),
+    vmath.vector4(255/255, 242/255, 0/255, 1),
+    vmath.vector4(255/255, 127/255, 58/255, 1),
+    vmath.vector4(237/255, 28/255, 36/255, 1),
+    vmath.vector4(163/255, 73/255, 164/255, 1)
+}
+
+function init(self)
+	local position = go.get_position()
+	position.y = position.y - 5
+	go.set_position(position)
+	particlefx.play("#pfx")
+	self.timer = 0.1
+	self.current = 0
+end
+	
+function final(self)
+	-- Add finalization code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	local position = go.get_position()
+	position.y = position.y - 5
+	go.set_position(position)
+	if position.y < 120 then
+		particlefx.stop("#pfx", { clear = true })
+		particlefx.play("#explode")
+		go.delete()
+	end
+	self.timer = self.timer - dt
+	if self.timer <= 0 then
+		self.current = self.current + 1
+		print("change")
+		local colour = list[self.current]
+		if colour ~= nil then
+			particlefx.set_constant("#pfx", "emitter", hash("tint"), colour)
+		end
+		self.timer = 0.1
+		if self.current > 5 then
+			self.current = 0
+		end
+		
+	end
+end
+
+function fixed_update(self, dt)
+	-- This function is called if 'Fixed Update Frequency' is enabled in the Engine section of game.project
+	-- Can be coupled with fixed updates of the physics simulation if 'Use Fixed Timestep' is enabled in
+	-- Physics section of game.project
+	-- Add update code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("restart") then
+		particlefx.stop("#pfx")
+		go.delete()
+	end
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here. The game object this script is attached to
+	-- must have acquired input focus:
+	--
+	--    msg.post(".", "acquire_input_focus")
+	--
+	-- All mapped input bindings will be received. Mouse and touch input will
+	-- be received regardless of where on the screen it happened.
+	-- Learn more: https://defold.com/manuals/input/
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Learn more: https://defold.com/manuals/hot-reload/
+	-- Remove this function if not needed
+end

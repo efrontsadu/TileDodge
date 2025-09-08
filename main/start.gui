@@ -1,0 +1,243 @@
+script: "/scripts/start.gui_script"
+fonts {
+  name: "verdana"
+  font: "/assets/verdana_big.font"
+}
+nodes {
+  position {
+    x: 170.0
+    y: 274.0
+  }
+  scale {
+    x: 0.8272
+    y: 0.795352
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "L"
+  font: "verdana"
+  id: "L"
+  inherit_alpha: true
+  alpha: 0.0
+}
+nodes {
+  position {
+    x: -3.410059
+    y: 74.106384
+  }
+  scale {
+    x: 0.856383
+    y: 0.218816
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "box"
+  parent: "L"
+  inherit_alpha: true
+  alpha: 0.75
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -2.410059
+    y: -77.893616
+  }
+  scale {
+    x: 0.857226
+    y: 0.218816
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "box1"
+  parent: "L"
+  inherit_alpha: true
+  alpha: 0.75
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 91.58994
+    y: -1.893618
+  }
+  rotation {
+    z: 90.0
+  }
+  scale {
+    x: 0.872871
+    y: 0.178319
+    z: 0.9
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "box2"
+  parent: "L"
+  inherit_alpha: true
+  alpha: 0.75
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -97.41006
+    y: -1.893618
+  }
+  rotation {
+    z: 90.0
+  }
+  scale {
+    x: 0.872871
+    y: 0.178319
+    z: 0.9
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "box3"
+  parent: "L"
+  inherit_alpha: true
+  alpha: 0.75
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 791.0
+    y: 274.0
+  }
+  scale {
+    x: 0.870957
+    y: 0.886367
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "R"
+  font: "verdana"
+  id: "R"
+  inherit_alpha: true
+  alpha: 0.0
+}
+nodes {
+  position {
+    x: -9.380156
+    y: 82.84719
+  }
+  scale {
+    x: 0.856383
+    y: 0.218816
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "box5"
+  parent: "R"
+  inherit_alpha: true
+  alpha: 0.75
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -8.380156
+    y: -69.15281
+  }
+  scale {
+    x: 0.857226
+    y: 0.218816
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "box6"
+  parent: "R"
+  inherit_alpha: true
+  alpha: 0.75
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 85.61984
+    y: 6.847194
+  }
+  rotation {
+    z: 90.0
+  }
+  scale {
+    x: 0.872871
+    y: 0.178319
+    z: 0.9
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "box7"
+  parent: "R"
+  inherit_alpha: true
+  alpha: 0.75
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -103.38016
+    y: 6.847194
+  }
+  rotation {
+    z: 90.0
+  }
+  scale {
+    x: 0.872871
+    y: 0.178319
+    z: 0.9
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "box9"
+  parent: "R"
+  inherit_alpha: true
+  alpha: 0.75
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 480.0
+    y: 498.0
+  }
+  scale {
+    x: 0.76534
+    y: 0.855649
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Tile Dodge"
+  font: "verdana"
+  id: "text"
+  inherit_alpha: true
+  alpha: 0.0
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT
