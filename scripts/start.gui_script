@@ -1,3 +1,20 @@
+--[[
+GUI Controller Script for Start of Game for Tile Dodge
+Copyright (C) 2026 Reuben Stannard
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 3.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+]]
+
 function init(self)
 	gui.animate(gui.get_node("text"), gui.PROP_COLOR, vmath.vector4(1,1,1,1), gui.EASING_LINEAR, 2, 0, function()
 		gui.animate(gui.get_node("L"), gui.PROP_COLOR, vmath.vector4(1,1,1,0.75), gui.EASING_LINEAR, 0.5)
